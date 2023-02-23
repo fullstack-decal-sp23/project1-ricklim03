@@ -1,0 +1,171 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+p {
+    color: black;   
+}
+
+img {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 2rem; 
+}
+
+nav > a:link {
+    font-size: 17px;
+}
+
+nav > a:visited {
+    font-size: 17px;
+}
+
+nav > a:hover{
+    font-size: 30px;
+}
+
+/* For my header */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-left {
+    flex-grow: 1;
+    display: block;
+}
+
+#Intro {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;  
+}
+
+#meImage {
+    width: 60%;
+    height: 70%;
+}
+
+#Intro > div {
+    width: 50%;
+}
+
+#ImageBack {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* For Projects */
+
+#Work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color:silver;
+}
+
+#Projects {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-between;
+}
+
+#Projects > div {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#Projects > div > h4 {
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+/* For Project 1 */
+
+.containerProject {
+    width: 100%;
+    color: black;
+}
+
+.ProjectRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+} 
+
+.ProjectImage {
+    border: 2px solid black;
+    width: 50%;
+}
+
+.ProjectImage > img {
+    width: 100%;
+}
+
+.ProjectCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding: 10px;
+}
+
+.col2row1 {
+    height: 20%;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.col2row1 > h5 {
+    color: black;
+}
+
+.col2row2 {
+    height: 80%;
+    background-color: white;
+    border: 2px solid black;
+    align-content: center;
+}
+
+/* Contact */
+
+#Contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+.rickyEmail {
+    text-decoration: underline;
+    color: black;
+}

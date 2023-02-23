@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ricky Lim" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ricky Lim's Personal Website</title>
+</head>
+<script type = "text/javascript">
+    function myFunc(){ 
+        location.href="mailto:rlim03@berkeley.edu"; 
+    }  
+</script>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Ricky Lim</h1>
+        </div>
+        <nav>
+            <a href="#About">About</a>
+            <a href="#Work">Work</a>
+            <a href="#Contact">Contact</a>
+            <a href="./RESUME for Ricky Lim (2).pdf" target="_blank">Resume</a>
+        </nav>
+    </header>    
+    <main>
+        <div id="Intro">
+            <div id="About">
+                <h2>About Me</h2>
+                <h3>Hi, my name is Ricky Lim and I am studying Data Science at UC Berkeley.</h3>
+                <img id="meImage" src="./P1011132.JPG" alt="Myself Image">
+            </div>
+            <div><img id="ImageBack" src="./th.jpg" alt="Data Science Image"></div>
+        </div>
+        <div id="Work">
+            <div id="Projects">
+                <div id="ProjectName1">
+                    <h4>Awakening of Azathoth</h4>
+                </div>
+                <div id="ProjectName2">
+                    <h4>Linked List Deque</h4>
+                </div>
+                <div id="ProjectName3">
+                    <h4>Array Deque</h4>
+                </div>
+            </div>
+            <div class="containerProject">
+                <div class="ProjectRow">
+                    <div class="ProjectImage"><img src="./download.png" alt="Hangman Image"></div>
+                    <div class="ProjectCol">
+                        <div class="col2row1">
+                            <h5>Awakening of Azathoth</h5>
+                        </div>
+                        <div class="col2row2">
+                            <p>Awakening of Azathoth was my first Java project and it required me to create guessers and choosers. These guessers would take in the users guesses, create a map of the guesses, and return the next "right" guess. The choosers take in the word length and a file of words and then returns a word from the files of the matching word length to be the new secret word.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerProject">
+                <div class="ProjectRow">
+                    <div class="ProjectImage"><img src="./Operations-on-Circular-Queue.png" alt="Linked List Deque"></div>
+                    <div class="ProjectCol">
+                        <div class="col2row1">
+                            <h5>Linked List Deque</h5>
+                        </div>
+                        <div class="col2row2">
+                            <p>Created a doubly linked list deque with two sentinel nodes and pointers. I created two pointers, front and back, so that the front of the last element links back to the sentinel or the front of the list and the back of the first element links back to the sentinel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerProject">
+                <div class="ProjectRow">
+                    <div class="ProjectImage"><img src="./ArrayDeque.png" alt="Array Deque"></div>
+                    <div class="ProjectCol">
+                        <div class="col2row1">
+                            <h5>Array Deque</h5>
+                        </div>
+                        <div class="col2row2">
+                            <p>Created a backing array in data structures. Used testing and test-driven development to verify the correctness of the data structures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <div id="Contact">
+            <form>
+                <div onclick="myFunc()" class="rickyEmail">Email</div>
+                </form>
+            <a href="https://www.instagram.com/rickyy.limm/">Instagram</a>
+            <h6>Phone Number: (714)-980-1986</h6>
+        </div>
+    </main>
+</body>
+</html>
